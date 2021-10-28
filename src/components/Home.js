@@ -88,11 +88,11 @@ const Home = () => {
                                     inEditMode.status && inEditMode.rowKey === item ? (
 <td><button className='icon' style={{color:'green',fontWeight:700}} onClick={e=>handleSave(item,e)} >Save</button></td>                                    ):(
                                       
-                                      <td><button className='icon' onClick={e=>handleUpdate(item,e)}><i class="fa fa-pencil" title="Edit"/></button></td>
+                                      <td><button className='icon' onClick={e=>handleUpdate(item,e)}>Edit</button></td>
                                     )}
             
               
-                   <td><button className='icon m-1' onClick={e=>handleDelete(item,e)}><i class="fa fa-trash" title="Delete"/></button></td>
+                   <td><button className='icon m-1' onClick={e=>handleDelete(item,e)}>Delete</button></td>
                   </tr>
                   )
               })}
